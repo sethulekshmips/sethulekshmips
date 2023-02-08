@@ -1,0 +1,18 @@
+import pandas as pd
+import numpy as np
+file=pd.read_csv('PublicSchools.csv')
+print(file)
+nb=file.head()
+print(nb)
+print("____________________________________________")
+std=file.std()
+print(std)
+print("____________________________________________")
+min=file.apply(np.min)
+print(min)
+print("____________________________________________")
+max=file.apply(np.max)
+print(max)
+print("____________________________________________")
+mean=file.mean()
+print(mean)
