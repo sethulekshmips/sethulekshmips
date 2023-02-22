@@ -10,6 +10,7 @@ for j in pattern:
 pindex = 0
 sindex = 0
 start = sindex
+
 while pindex<len(patarr) and sindex<len(strarr):
     if strarr[sindex]==patarr[pindex]:
         sindex += 1
@@ -20,6 +21,6 @@ while pindex<len(patarr) and sindex<len(strarr):
         patindex = 0
 
 if pindex==len(patarr):
-    print(f"\n pattern is found from the position: \n {start} to {sindex-1-1}")
+    print(f"\n pattern is found from the position: \n {start} to {sindex-1}")
 else:
     print("pattern is not found in the string")

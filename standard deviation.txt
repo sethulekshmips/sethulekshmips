@@ -1,0 +1,11 @@
+data_set=[46,69,32,60,52,41]
+Mean = sum(data_set)/len(data_set)
+Sum=[]
+for i in range(len(data_set)):
+    element = (data_set[i] - Mean) ** 2
+    Sum.append(element)
+Total_Sum = sum(Sum)
+Variance = Total_Sum/(len(data_set)-1)
+import math
+Standard_deviation = math.sqrt(Variance)
+print(Standard_deviation)

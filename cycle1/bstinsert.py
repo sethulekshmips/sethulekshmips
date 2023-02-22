@@ -20,6 +20,7 @@ def inorder(root):
         inorder(root.leftchild)
         print(root.val)
         inorder(root.rightchild)
+
 r = node(50)
 r = insert(r, 30)
 r = insert(r, 20)

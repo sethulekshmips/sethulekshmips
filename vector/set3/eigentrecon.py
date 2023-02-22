@@ -13,18 +13,9 @@ matrix = np.array([
 print("\nMatrix = :")
 for row in matrix:
     print(row)
-
-
 Evalues, Evectors = eig(matrix)
-
-
-
 invEig = inv(Evectors)
-
-
 Diagfrmvect = diag(Evalues)
-
-
 rematrix = Evectors.dot(Diagfrmvect).dot(invEig)
 
 print("\nRe-Constructed Matrix = :")

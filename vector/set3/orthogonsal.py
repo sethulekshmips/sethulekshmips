@@ -10,7 +10,6 @@ def matrixmul(A,B):
                 result[i][j]=result[i][j]+A[i][k]*B[k][j]
     return result
 
-
 def createidentity(rows, col):
     result = []
     for i in range(rows):

@@ -6,6 +6,8 @@ def  max(array):
             max=a[i]
     return max
 
+#a=[1,2,3]
+#print("largest:",max(a))
 def sum(array):
     sum=0
     for i in range(len(array)):
