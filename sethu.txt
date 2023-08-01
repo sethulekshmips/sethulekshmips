@@ -1,0 +1,81 @@
+# Timetable Scheduling Project - Software Requirement Document
+
+## 1. Introduction
+The Timetable Scheduling Project aims to develop a web-based system using the Django framework that automatically reschedules classes in case a teacher is unable to take a class. The system will maintain a standard timetable and handle teacher absences by generating a rescheduled timetable. The rescheduled timetable will replace the standard timetable temporarily, and after the day, the standard timetable will be recovered and displayed on the website. Additionally, the system will provide performance graphs based on teacher absences and working hours, as well as issue warnings to teachers when necessary.
+
+## 2. Scope
+The project will consist of the following major functionalities:
+- Maintenance of a standard timetable for classes.
+- Automatic rescheduling of classes in the event of teacher absences.
+- Temporary replacement of the standard timetable with the rescheduled timetable.
+- Recovery and display of the standard timetable after the day.
+- Generation of performance graphs based on teacher absences and working hours.
+- Issuing warnings to teachers based on their attendance records.
+
+## 3. Functional Requirements
+
+### 3.1 Standard Timetable Management
+- The system should allow administrators to define and manage the standard timetable for each class/course.
+- The standard timetable should be editable, allowing adjustments to be made whenever required.
+
+### 3.2 Teacher Absence Notification
+- Teachers should be able to notify the system in advance if they are unable to take a class on a specific day.
+- The system should allow teachers to update their absence status for upcoming classes.
+
+### 3.3 Automatic Timetable Rescheduling
+- When a teacher notifies the system of their absence, the system should automatically reschedule the class to another available time slot and assign another teacher if necessary.
+- The rescheduled timetable should avoid conflicts with other classes and teachers' schedules.
+
+### 3.4 Temporary Replacement of Standard Timetable
+- The rescheduled timetable should temporarily replace the standard timetable for the affected day.
+- The system should ensure that students and teachers can view the updated timetable for that day on the website.
+
+### 3.5 Timetable Recovery and Display
+- After the day has passed, the system should automatically recover and display the standard timetable on the website.
+- The recovered standard timetable should replace the rescheduled timetable.
+
+### 3.6 Performance Graphs Generation
+- The system should generate performance graphs for each teacher, depicting their attendance and working hours.
+- The graphs should provide insights into a teacher's attendance record and help identify patterns and trends.
+
+### 3.7 Warning System
+- The system should issue warnings to teachers who have a significant number of absences or irregular attendance patterns.
+- The warning system should alert teachers about their attendance performance and emphasize the importance of maintaining regular attendance.
+
+## 4. Non-Functional Requirements
+
+### 4.1 Usability
+- The system should have an intuitive and user-friendly interface for administrators, teachers, students, and other users.
+- The design should be responsive and accessible across various devices and screen sizes.
+
+### 4.2 Performance
+- The system should handle a large number of classes, teachers, and students efficiently.
+- Timetable generation and rescheduling processes should be fast and responsive.
+
+### 4.3 Security
+- The system should implement proper authentication and authorization mechanisms to ensure that only authorized users can access and modify the timetables.
+- Sensitive data, such as teacher performance records, should be securely stored and encrypted.
+
+### 4.4 Reliability
+- The system should be highly reliable, minimizing downtime and data loss.
+- It should be able to recover from unexpected failures gracefully.
+
+### 4.5 Scalability
+- The system should be scalable to accommodate future expansion and an increasing number of users, classes, and teachers.
+
+### 4.6 Maintainability
+- The codebase should follow best practices and be well-documented for easy maintenance and future development.
+- Regular updates and bug fixes should be provided as needed.
+
+## 5. Constraints
+- The system should be developed using the Django framework.
+- The project should adhere to the organization's technology stack and infrastructure.
+
+## 6. Glossary
+- Standard Timetable: The predefined timetable for classes before any rescheduling takes place.
+- Rescheduled Timetable: The timetable generated automatically when a teacher is unable to take a class.
+- Performance Graphs: Graphical representations of a teacher's attendance and working hours.
+- Warning System: System for issuing warnings to teachers based on their attendance records.
+
+## 7. Conclusion
+The Timetable Scheduling Project aims to streamline the process of handling teacher absences and class rescheduling. By implementing automatic timetable adjustments, generating performance graphs, and issuing warnings, the system will enhance overall efficiency and transparency in managing class schedules and teacher attendance.
