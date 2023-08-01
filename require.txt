@@ -1,0 +1,58 @@
+To build the Timetable Scheduling Project using Django, you will need various frameworks and libraries to handle different aspects of the system. Below are the required frameworks and libraries:
+
+1. Django Framework:
+   - Django is the core framework for building the web application and managing the backend.
+   - It provides a powerful ORM (Object-Relational Mapping) to interact with the database.
+   - Django handles URL routing, view functions, templates, and other web-related functionalities.
+
+2. Django REST framework (DRF):
+   - DRF is an extension of Django that allows the development of RESTful APIs.
+   - It will be used to create APIs for handling teacher absences, class schedules, and other operations.
+
+3. Django Celery:
+   - Django Celery is a distributed task queue system.
+   - It will be used to handle asynchronous tasks like timetable rescheduling, so it doesn't block the main application.
+
+4. Django Allauth:
+   - Django Allauth is a library for user authentication and registration.
+   - It will be used for managing user accounts and permissions.
+
+5. Django Crispy Forms:
+   - Django Crispy Forms is used to style and render forms in a more elegant way.
+   - It helps in creating forms for updating the standard timetable and handling teacher absence notifications.
+
+6. Chart.js or Plotly:
+   - Chart.js or Plotly are libraries for creating interactive charts and graphs.
+   - It will be used to generate performance graphs based on teacher absences and working hours.
+
+7. Django Background Tasks:
+   - Django Background Tasks allows scheduling background tasks in Django.
+   - It can be used for handling periodic tasks, such as generating performance graphs or sending warning notifications.
+
+8. Django REST framework JWT:
+   - This library provides JSON Web Token (JWT) authentication for Django REST framework.
+   - JWT will be used to secure the REST APIs and handle user authentication for the frontend.
+
+9. PostgreSQL or MySQL:
+   - Choose a relational database like PostgreSQL or MySQL to store timetable data, teacher records, and user information.
+
+10. Redis:
+    - Redis is an in-memory data structure store that can be used as a broker for Django Celery.
+    - It helps with task queuing and background job management.
+
+11. Bootstrap or Materialize CSS:
+    - Use Bootstrap or Materialize CSS to create a responsive and visually appealing frontend for the web application.
+
+12. JavaScript and AJAX:
+    - Utilize JavaScript and AJAX for handling dynamic interactions on the frontend and making asynchronous API calls to update timetables and handle notifications.
+
+13. Git Version Control:
+    - Use Git for version control and collaboration among developers.
+
+14. Unit Testing Framework (e.g., Django's built-in test framework):
+    - Implement unit tests to ensure the correctness of functionalities and prevent regressions.
+
+15. Virtual Environment:
+    - Create a virtual environment to manage the project's dependencies and avoid conflicts with system-wide packages.
+
+These frameworks and libraries will form the foundation of the Timetable Scheduling Project, providing the necessary tools to implement the required functionalities efficiently and securely.
